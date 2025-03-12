@@ -1,0 +1,70 @@
+:root {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 120%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+@keyframes wobble {
+
+  0%,
+  100% {
+    transform: scale(1)
+  }
+
+  25% {
+    transform: scale(1.02)
+  }
+
+  35% {
+    transform: scale(1.03)
+  }
+
+  50% {
+    transform: scale(1.04)
+  }
+
+  65% {
+    transform: scale(1.03)
+  }
+
+  75% {
+    transform: scale(1.02)
+  }
+}
+
+@keyframes moveStripes {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 35.36px 0;
+    /* Move by one pattern width */
+  }
+}
+
+.linear-gradient-button {
+  background-image: linear-gradient(54deg, #FA8313, #F5BF0A);
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 0 rgba(0, 0, 0, 0.7),
+    0px 0px 0 rgba(0, 0, 0, 0.7),
+    0px 0px 0 rgba(0, 0, 0, 0.7),
+    1px 1px 0 rgba(0, 0, 0, 0.7);
+}

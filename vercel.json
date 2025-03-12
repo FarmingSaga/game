@@ -1,0 +1,58 @@
+{
+    "headers": [
+        {
+            "source": "/unity/Build/unity.loader.js",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/javascript"
+                }
+            ]
+        },
+        {
+            "source": "/unity/Build/unity.framework.js.br",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/javascript"
+                },
+                {
+                    "key": "Content-Encoding",
+                    "value": "br"
+                }
+            ]
+        },
+        {
+            "source": "/unity/Build/unity.data.br",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/octet-stream"
+                },
+                {
+                    "key": "Content-Encoding",
+                    "value": "br"
+                }
+            ]
+        },
+        {
+            "source": "/unity/Build/unity.wasm.br",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/wasm"
+                },
+                {
+                    "key": "Content-Encoding",
+                    "value": "br"
+                }
+            ]
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/game",
+            "destination": "/index.html"
+        }
+    ]
+}
